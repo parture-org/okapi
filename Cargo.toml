@@ -5,3 +5,7 @@ members = [
     "rocket-okapi-codegen",
     "examples/json-web-api"
 ]
+
+[patch.crates-io]
+schemars = { git = "https://github.com/parture-org/schemars", branch = "openapi-discriminator" }
+schemars_derive = { git = "https://github.com/parture-org/schemars", branch = "openapi-discriminator" }
