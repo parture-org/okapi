@@ -77,7 +77,7 @@ impl OpenApiGenerator {
                     self.schema_generator
                         .definitions()
                         .into_iter()
-                        .map(|(k, v)| (k.to_owned(), v.into())),
+                        .map(|(k, v)| (k.to_owned(), v.clone().into())),
                 ),
                 ..Default::default()
             }),
